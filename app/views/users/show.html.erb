@@ -1,0 +1,23 @@
+<div class="container">
+<div class="row">
+  <div class="col-lg-7">
+  <h1>Editing User</h1>
+   <p id="notice"><%= notice %></p>
+  <p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+  </p>
+<p>
+  <strong>Age:</strong>
+  <%= @user.age %>
+</p>
+<p>
+  <strong>Address:</strong>
+  <%= @user.address %>
+</p>
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path,class:"btn btn-primay"%>
+ </div>
+</div>
+</div>
+
